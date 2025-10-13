@@ -1,0 +1,3 @@
+import { Link, NavLink } from 'react-router-dom';
+
+export default function Navbar() { return ( <header className="bg-white/80 backdrop-blur sticky top-0 z-10 border-b"> <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between"> <Link to="/" className="font-semibold text-lg">MyStore</Link> <nav className="flex gap-6"> <NavLink to="/" className={({isActive})=> isActive ? 'text-blue-600 font-medium' : 'text-gray-700 hover:text-gray-900'}>Главная</NavLink> <NavLink to="/registration" className={({isActive})=> isActive ? 'text-blue-600 font-medium' : 'text-gray-700 hover:text-gray-900'}>Регистрация</NavLink> </nav> </div> </header> ); }
